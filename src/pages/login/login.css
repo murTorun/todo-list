@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(
+            217deg,
+            rgba(255, 0, 0, 0.8),
+            rgba(255, 0, 0, 0) 70.71%
+        ),
+        linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", monospace;
+}
+.login-container {
+    min-height: 60vh;
+    width: 50vw;
+    min-width: 300px;
+    max-width: 400px;
+
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 32px;
+    padding-block: 32px;
+    align-items: center;
+    font-size: 24px;
+}
+.header {
+    text-align: center;
+    font-size: 42px;
+    font-family: "Roboto Mono", monospace;
+}
+.credentials-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+.email,
+.password {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    color: rgb(165, 164, 164);
+}
+
+input {
+    border: none;
+    background-color: rgb(224, 224, 224);
+    outline: none;
+    height: 32px;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: rgb(110, 110, 110);
+    transition: all 400ms ease 0s;
+}
+.signup-button {
+    color: rgb(110, 110, 110);
+    height: 4rem;
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+    margin-top: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    cursor: hand;
+    transition: all 400ms ease 0s;
+    border: none;
+}
+.error-message {
+    color: red;
+    font-size: 1rem;
+    max-width: 80%;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    font-family: "Roboto";
+}
+.buttons > * {
+    width: 100%;
+    text-align: center;
+}
+.google-btn {
+    width: 100%;
+
+    height: 4rem;
+    background-color: rgb(224, 224, 224);
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    cursor: hand;
+    align-self: center;
+    user-select: none;
+    transition: all 400ms ease 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 15px;
+    gap: 16px;
+}
+.google-btn .google-icon-wrapper {
+    border-radius: 2px;
+    user-select: none;
+}
+.google-btn .google-icon-svg {
+    width: 18px;
+    height: 18px;
+    user-select: none;
+}
+.google-btn .btn-text {
+    color: #757575;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    font-family: "Roboto";
+    user-select: none;
+}
+button:hover,
+.google-btn:hover,
+input:hover {
+    box-shadow: 0 3px 8px rgba(117, 117, 117, 0.5);
+    user-select: none;
+}
+button:active,
+.google-btn:active,
+input:active {
+    box-shadow: 0 1px 1px #757575;
+    background: #f8f8f8;
+    color: #fff;
+    user-select: none;
+}
+
+.not-registered-text {
+    font-size: 1rem;
+}
