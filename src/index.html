@@ -8,9 +8,45 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <a href="./pages/signup/signup.html">sign up</a>
+        <!-- <a href="./pages/signup/signup.html">sign up</a>
         <a href="./pages/login/login.html">log in</a>
-        <a href="#" class="sign-out">sign out</a>
+        <a href="#" class="sign-out">sign out</a> -->
+        <div class="sign-out">Sign Out</div>
+        <div class="not-logged-in-text">
+            <a href="./pages/login/login.html">Log in</a> to save your ToDos
+        </div>
+        <div class="not-registered-text">
+            Don't have an account? Register
+            <a href="./pages/signup/signup.html">here</a>.
+        </div>
+        <script>
+            let a = document.querySelectorAll("div");
+            a.forEach((element) => {
+                element.style.display = "none";
+            });
+        </script>
+        <div class="todo-container">
+            <form class="add-item-menu">
+                <input
+                    class="text-input"
+                    type="text"
+                    name="text-input"
+                    placeholder="Add some ToDos"
+                    autocomplete="off"
+                />
+                <button type="submit" class="button-input">
+                    <img src="./svg/plus.svg" alt="plus icon" />
+                </button>
+            </form>
+            <div class="todo-items-container">
+                <!-- <div class="todo-item">
+                    <div class="todo-text">Lorem ipsum dolor sit</div>
+                    <div class="trash-icon">
+                        <img src="./svg/trash-bin.svg" alt="trash bin icon" />
+                    </div>
+                </div> -->
+            </div>
+        </div>
         <script src="../dist/bundle.js"></script>
     </body>
 </html>
